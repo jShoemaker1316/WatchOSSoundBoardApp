@@ -1,0 +1,973 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10616DD425CC61760084F6A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10616DD325CC61760084F6A1 /* AppDelegate.swift */; };
+		10616DD625CC61760084F6A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10616DD525CC61760084F6A1 /* SceneDelegate.swift */; };
+		10616DD825CC61760084F6A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10616DD725CC61760084F6A1 /* ViewController.swift */; };
+		10616DDB25CC61760084F6A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10616DD925CC61760084F6A1 /* Main.storyboard */; };
+		10616DDD25CC61770084F6A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10616DDC25CC61770084F6A1 /* Assets.xcassets */; };
+		10616DE025CC61770084F6A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10616DDE25CC61770084F6A1 /* LaunchScreen.storyboard */; };
+		10616DEB25CC61770084F6A1 /* WatchSoundBoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10616DEA25CC61770084F6A1 /* WatchSoundBoardTests.swift */; };
+		10616DF625CC61770084F6A1 /* WatchSoundBoardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10616DF525CC61770084F6A1 /* WatchSoundBoardUITests.swift */; };
+		10616DFB25CC61770084F6A1 /* WatchSoundBoard WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 10616DFA25CC61770084F6A1 /* WatchSoundBoard WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		10616E0125CC61770084F6A1 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10616DFF25CC61770084F6A1 /* Interface.storyboard */; };
+		10616E0325CC61770084F6A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10616E0225CC61770084F6A1 /* Assets.xcassets */; };
+		10616E0A25CC61770084F6A1 /* WatchSoundBoard WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 10616E0925CC61770084F6A1 /* WatchSoundBoard WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		10616E0F25CC61770084F6A1 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10616E0E25CC61770084F6A1 /* InterfaceController.swift */; };
+		10616E1125CC61770084F6A1 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10616E1025CC61770084F6A1 /* ExtensionDelegate.swift */; };
+		10616E1325CC61770084F6A1 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10616E1225CC61770084F6A1 /* NotificationController.swift */; };
+		10616E1525CC61770084F6A1 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10616E1425CC61770084F6A1 /* ComplicationController.swift */; };
+		10616E1725CC61770084F6A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10616E1625CC61770084F6A1 /* Assets.xcassets */; };
+		10616E3325CC8E560084F6A1 /* SoundPlaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10616E3225CC8E560084F6A1 /* SoundPlaying.swift */; };
+		10616E4E25CC98C00084F6A1 /* Curt Reply.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10616E3F25CC98C00084F6A1 /* Curt Reply.mp3 */; };
+		10616E4F25CC98C00084F6A1 /* Speeder bike flyby.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10616E4025CC98C00084F6A1 /* Speeder bike flyby.mp3 */; };
+		10616E5025CC98C00084F6A1 /* Startled Whoop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10616E4125CC98C00084F6A1 /* Startled Whoop.mp3 */; };
+		10616E5125CC98C00084F6A1 /* Jump to lightspeed.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10616E4225CC98C00084F6A1 /* Jump to lightspeed.mp3 */; };
+		10616E5225CC98C00084F6A1 /* Falcon landing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10616E4325CC98C00084F6A1 /* Falcon landing.mp3 */; };
+		10616E5325CC98C00084F6A1 /* TIE fighter fire 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10616E4425CC98C00084F6A1 /* TIE fighter fire 1.mp3 */; };
+		10616E5425CC98C00084F6A1 /* XWing fire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10616E4525CC98C00084F6A1 /* XWing fire.mp3 */; };
+		10616E5525CC98C00084F6A1 /* Landspeeder accelerate.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10616E4625CC98C00084F6A1 /* Landspeeder accelerate.mp3 */; };
+		10616E5625CC98C00084F6A1 /* TIE fighter flyby 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10616E4725CC98C00084F6A1 /* TIE fighter flyby 2.mp3 */; };
+		10616E5725CC98C00084F6A1 /* Hyperdrive trouble.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10616E4825CC98C00084F6A1 /* Hyperdrive trouble.mp3 */; };
+		10616E5825CC98C00084F6A1 /* Lonely singing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10616E4925CC98C00084F6A1 /* Lonely singing.mp3 */; };
+		10616E5925CC98C00084F6A1 /* WEEEOOOOWW.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10616E4A25CC98C00084F6A1 /* WEEEOOOOWW.mp3 */; };
+		10616E5A25CC98C00084F6A1 /* XWing flyby 3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10616E4B25CC98C00084F6A1 /* XWing flyby 3.mp3 */; };
+		10616E5B25CC98C00084F6A1 /* Abrupt Burst.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10616E4C25CC98C00084F6A1 /* Abrupt Burst.mp3 */; };
+		10616E5C25CC98C00084F6A1 /* Quadlaser turret fire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10616E4D25CC98C00084F6A1 /* Quadlaser turret fire.mp3 */; };
+		10616E6325CC9AD90084F6A1 /* TableInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10616E6225CC9AD90084F6A1 /* TableInterfaceController.swift */; };
+		10616E6A25CCF56C0084F6A1 /* SoundRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10616E6925CCF56C0084F6A1 /* SoundRow.swift */; };
+		10616E7125CCFC2B0084F6A1 /* CustomInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10616E7025CCFC2B0084F6A1 /* CustomInterfaceController.swift */; };
+		10616E7825CCFD3F0084F6A1 /* FileManager-DocumentsDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10616E7725CCFD3F0084F6A1 /* FileManager-DocumentsDirectory.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		10616DE725CC61770084F6A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10616DC825CC61760084F6A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10616DCF25CC61760084F6A1;
+			remoteInfo = WatchSoundBoard;
+		};
+		10616DF225CC61770084F6A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10616DC825CC61760084F6A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10616DCF25CC61760084F6A1;
+			remoteInfo = WatchSoundBoard;
+		};
+		10616DFC25CC61770084F6A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10616DC825CC61760084F6A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10616DF925CC61770084F6A1;
+			remoteInfo = "WatchSoundBoard WatchKit App";
+		};
+		10616E0B25CC61770084F6A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10616DC825CC61760084F6A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10616E0825CC61770084F6A1;
+			remoteInfo = "WatchSoundBoard WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		10616E1F25CC61770084F6A1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				10616E0A25CC61770084F6A1 /* WatchSoundBoard WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10616E2325CC61770084F6A1 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				10616DFB25CC61770084F6A1 /* WatchSoundBoard WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		10616DD025CC61760084F6A1 /* WatchSoundBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchSoundBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		10616DD325CC61760084F6A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		10616DD525CC61760084F6A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		10616DD725CC61760084F6A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		10616DDA25CC61760084F6A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		10616DDC25CC61770084F6A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		10616DDF25CC61770084F6A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		10616DE125CC61770084F6A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10616DE625CC61770084F6A1 /* WatchSoundBoardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatchSoundBoardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		10616DEA25CC61770084F6A1 /* WatchSoundBoardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSoundBoardTests.swift; sourceTree = "<group>"; };
+		10616DEC25CC61770084F6A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10616DF125CC61770084F6A1 /* WatchSoundBoardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatchSoundBoardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		10616DF525CC61770084F6A1 /* WatchSoundBoardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSoundBoardUITests.swift; sourceTree = "<group>"; };
+		10616DF725CC61770084F6A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10616DFA25CC61770084F6A1 /* WatchSoundBoard WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchSoundBoard WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		10616E0025CC61770084F6A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		10616E0225CC61770084F6A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		10616E0425CC61770084F6A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10616E0925CC61770084F6A1 /* WatchSoundBoard WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchSoundBoard WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		10616E0E25CC61770084F6A1 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		10616E1025CC61770084F6A1 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		10616E1225CC61770084F6A1 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		10616E1425CC61770084F6A1 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		10616E1625CC61770084F6A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		10616E1825CC61770084F6A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10616E1925CC61770084F6A1 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		10616E3225CC8E560084F6A1 /* SoundPlaying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlaying.swift; sourceTree = "<group>"; };
+		10616E3F25CC98C00084F6A1 /* Curt Reply.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Curt Reply.mp3"; sourceTree = "<group>"; };
+		10616E4025CC98C00084F6A1 /* Speeder bike flyby.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Speeder bike flyby.mp3"; sourceTree = "<group>"; };
+		10616E4125CC98C00084F6A1 /* Startled Whoop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Startled Whoop.mp3"; sourceTree = "<group>"; };
+		10616E4225CC98C00084F6A1 /* Jump to lightspeed.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Jump to lightspeed.mp3"; sourceTree = "<group>"; };
+		10616E4325CC98C00084F6A1 /* Falcon landing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Falcon landing.mp3"; sourceTree = "<group>"; };
+		10616E4425CC98C00084F6A1 /* TIE fighter fire 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "TIE fighter fire 1.mp3"; sourceTree = "<group>"; };
+		10616E4525CC98C00084F6A1 /* XWing fire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "XWing fire.mp3"; sourceTree = "<group>"; };
+		10616E4625CC98C00084F6A1 /* Landspeeder accelerate.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Landspeeder accelerate.mp3"; sourceTree = "<group>"; };
+		10616E4725CC98C00084F6A1 /* TIE fighter flyby 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "TIE fighter flyby 2.mp3"; sourceTree = "<group>"; };
+		10616E4825CC98C00084F6A1 /* Hyperdrive trouble.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Hyperdrive trouble.mp3"; sourceTree = "<group>"; };
+		10616E4925CC98C00084F6A1 /* Lonely singing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Lonely singing.mp3"; sourceTree = "<group>"; };
+		10616E4A25CC98C00084F6A1 /* WEEEOOOOWW.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = WEEEOOOOWW.mp3; sourceTree = "<group>"; };
+		10616E4B25CC98C00084F6A1 /* XWing flyby 3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "XWing flyby 3.mp3"; sourceTree = "<group>"; };
+		10616E4C25CC98C00084F6A1 /* Abrupt Burst.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Abrupt Burst.mp3"; sourceTree = "<group>"; };
+		10616E4D25CC98C00084F6A1 /* Quadlaser turret fire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Quadlaser turret fire.mp3"; sourceTree = "<group>"; };
+		10616E6225CC9AD90084F6A1 /* TableInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TableInterfaceController.swift; path = "WatchSoundBoard WatchKit App/TableInterfaceController.swift"; sourceTree = SOURCE_ROOT; };
+		10616E6925CCF56C0084F6A1 /* SoundRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundRow.swift; sourceTree = "<group>"; };
+		10616E7025CCFC2B0084F6A1 /* CustomInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomInterfaceController.swift; path = "WatchSoundBoard WatchKit App/CustomInterfaceController.swift"; sourceTree = SOURCE_ROOT; };
+		10616E7725CCFD3F0084F6A1 /* FileManager-DocumentsDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "FileManager-DocumentsDirectory.swift"; path = "WatchSoundBoard WatchKit App/FileManager-DocumentsDirectory.swift"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		10616DCD25CC61760084F6A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10616DE325CC61770084F6A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10616DEE25CC61770084F6A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10616E0625CC61770084F6A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10616DC725CC61760084F6A1 = {
+			isa = PBXGroup;
+			children = (
+				10616DD225CC61760084F6A1 /* WatchSoundBoard */,
+				10616DE925CC61770084F6A1 /* WatchSoundBoardTests */,
+				10616DF425CC61770084F6A1 /* WatchSoundBoardUITests */,
+				10616DFE25CC61770084F6A1 /* WatchSoundBoard WatchKit App */,
+				10616E0D25CC61770084F6A1 /* WatchSoundBoard WatchKit Extension */,
+				10616DD125CC61760084F6A1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		10616DD125CC61760084F6A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				10616DD025CC61760084F6A1 /* WatchSoundBoard.app */,
+				10616DE625CC61770084F6A1 /* WatchSoundBoardTests.xctest */,
+				10616DF125CC61770084F6A1 /* WatchSoundBoardUITests.xctest */,
+				10616DFA25CC61770084F6A1 /* WatchSoundBoard WatchKit App.app */,
+				10616E0925CC61770084F6A1 /* WatchSoundBoard WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		10616DD225CC61760084F6A1 /* WatchSoundBoard */ = {
+			isa = PBXGroup;
+			children = (
+				10616DD325CC61760084F6A1 /* AppDelegate.swift */,
+				10616DD525CC61760084F6A1 /* SceneDelegate.swift */,
+				10616DD725CC61760084F6A1 /* ViewController.swift */,
+				10616DD925CC61760084F6A1 /* Main.storyboard */,
+				10616DDC25CC61770084F6A1 /* Assets.xcassets */,
+				10616DDE25CC61770084F6A1 /* LaunchScreen.storyboard */,
+				10616DE125CC61770084F6A1 /* Info.plist */,
+			);
+			path = WatchSoundBoard;
+			sourceTree = "<group>";
+		};
+		10616DE925CC61770084F6A1 /* WatchSoundBoardTests */ = {
+			isa = PBXGroup;
+			children = (
+				10616DEA25CC61770084F6A1 /* WatchSoundBoardTests.swift */,
+				10616DEC25CC61770084F6A1 /* Info.plist */,
+			);
+			path = WatchSoundBoardTests;
+			sourceTree = "<group>";
+		};
+		10616DF425CC61770084F6A1 /* WatchSoundBoardUITests */ = {
+			isa = PBXGroup;
+			children = (
+				10616DF525CC61770084F6A1 /* WatchSoundBoardUITests.swift */,
+				10616DF725CC61770084F6A1 /* Info.plist */,
+			);
+			path = WatchSoundBoardUITests;
+			sourceTree = "<group>";
+		};
+		10616DFE25CC61770084F6A1 /* WatchSoundBoard WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				10616DFF25CC61770084F6A1 /* Interface.storyboard */,
+				10616E0225CC61770084F6A1 /* Assets.xcassets */,
+				10616E0425CC61770084F6A1 /* Info.plist */,
+			);
+			path = "WatchSoundBoard WatchKit App";
+			sourceTree = "<group>";
+		};
+		10616E0D25CC61770084F6A1 /* WatchSoundBoard WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				10616E7725CCFD3F0084F6A1 /* FileManager-DocumentsDirectory.swift */,
+				10616E7025CCFC2B0084F6A1 /* CustomInterfaceController.swift */,
+				10616E6225CC9AD90084F6A1 /* TableInterfaceController.swift */,
+				10616E6925CCF56C0084F6A1 /* SoundRow.swift */,
+				10616E0E25CC61770084F6A1 /* InterfaceController.swift */,
+				10616E3225CC8E560084F6A1 /* SoundPlaying.swift */,
+				10616E1025CC61770084F6A1 /* ExtensionDelegate.swift */,
+				10616E1225CC61770084F6A1 /* NotificationController.swift */,
+				10616E1425CC61770084F6A1 /* ComplicationController.swift */,
+				10616E3E25CC98C00084F6A1 /* StarWarsAudio */,
+				10616E1625CC61770084F6A1 /* Assets.xcassets */,
+				10616E1825CC61770084F6A1 /* Info.plist */,
+				10616E1925CC61770084F6A1 /* PushNotificationPayload.apns */,
+			);
+			path = "WatchSoundBoard WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		10616E3E25CC98C00084F6A1 /* StarWarsAudio */ = {
+			isa = PBXGroup;
+			children = (
+				10616E3F25CC98C00084F6A1 /* Curt Reply.mp3 */,
+				10616E4025CC98C00084F6A1 /* Speeder bike flyby.mp3 */,
+				10616E4125CC98C00084F6A1 /* Startled Whoop.mp3 */,
+				10616E4225CC98C00084F6A1 /* Jump to lightspeed.mp3 */,
+				10616E4325CC98C00084F6A1 /* Falcon landing.mp3 */,
+				10616E4425CC98C00084F6A1 /* TIE fighter fire 1.mp3 */,
+				10616E4525CC98C00084F6A1 /* XWing fire.mp3 */,
+				10616E4625CC98C00084F6A1 /* Landspeeder accelerate.mp3 */,
+				10616E4725CC98C00084F6A1 /* TIE fighter flyby 2.mp3 */,
+				10616E4825CC98C00084F6A1 /* Hyperdrive trouble.mp3 */,
+				10616E4925CC98C00084F6A1 /* Lonely singing.mp3 */,
+				10616E4A25CC98C00084F6A1 /* WEEEOOOOWW.mp3 */,
+				10616E4B25CC98C00084F6A1 /* XWing flyby 3.mp3 */,
+				10616E4C25CC98C00084F6A1 /* Abrupt Burst.mp3 */,
+				10616E4D25CC98C00084F6A1 /* Quadlaser turret fire.mp3 */,
+			);
+			path = StarWarsAudio;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		10616DCF25CC61760084F6A1 /* WatchSoundBoard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10616E2425CC61770084F6A1 /* Build configuration list for PBXNativeTarget "WatchSoundBoard" */;
+			buildPhases = (
+				10616DCC25CC61760084F6A1 /* Sources */,
+				10616DCD25CC61760084F6A1 /* Frameworks */,
+				10616DCE25CC61760084F6A1 /* Resources */,
+				10616E2325CC61770084F6A1 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10616DFD25CC61770084F6A1 /* PBXTargetDependency */,
+			);
+			name = WatchSoundBoard;
+			productName = WatchSoundBoard;
+			productReference = 10616DD025CC61760084F6A1 /* WatchSoundBoard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		10616DE525CC61770084F6A1 /* WatchSoundBoardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10616E2725CC61770084F6A1 /* Build configuration list for PBXNativeTarget "WatchSoundBoardTests" */;
+			buildPhases = (
+				10616DE225CC61770084F6A1 /* Sources */,
+				10616DE325CC61770084F6A1 /* Frameworks */,
+				10616DE425CC61770084F6A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10616DE825CC61770084F6A1 /* PBXTargetDependency */,
+			);
+			name = WatchSoundBoardTests;
+			productName = WatchSoundBoardTests;
+			productReference = 10616DE625CC61770084F6A1 /* WatchSoundBoardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		10616DF025CC61770084F6A1 /* WatchSoundBoardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10616E2A25CC61770084F6A1 /* Build configuration list for PBXNativeTarget "WatchSoundBoardUITests" */;
+			buildPhases = (
+				10616DED25CC61770084F6A1 /* Sources */,
+				10616DEE25CC61770084F6A1 /* Frameworks */,
+				10616DEF25CC61770084F6A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10616DF325CC61770084F6A1 /* PBXTargetDependency */,
+			);
+			name = WatchSoundBoardUITests;
+			productName = WatchSoundBoardUITests;
+			productReference = 10616DF125CC61770084F6A1 /* WatchSoundBoardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		10616DF925CC61770084F6A1 /* WatchSoundBoard WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10616E2025CC61770084F6A1 /* Build configuration list for PBXNativeTarget "WatchSoundBoard WatchKit App" */;
+			buildPhases = (
+				10616DF825CC61770084F6A1 /* Resources */,
+				10616E1F25CC61770084F6A1 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10616E0C25CC61770084F6A1 /* PBXTargetDependency */,
+			);
+			name = "WatchSoundBoard WatchKit App";
+			productName = "WatchSoundBoard WatchKit App";
+			productReference = 10616DFA25CC61770084F6A1 /* WatchSoundBoard WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		10616E0825CC61770084F6A1 /* WatchSoundBoard WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10616E1C25CC61770084F6A1 /* Build configuration list for PBXNativeTarget "WatchSoundBoard WatchKit Extension" */;
+			buildPhases = (
+				10616E0525CC61770084F6A1 /* Sources */,
+				10616E0625CC61770084F6A1 /* Frameworks */,
+				10616E0725CC61770084F6A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchSoundBoard WatchKit Extension";
+			productName = "WatchSoundBoard WatchKit Extension";
+			productReference = 10616E0925CC61770084F6A1 /* WatchSoundBoard WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		10616DC825CC61760084F6A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					10616DCF25CC61760084F6A1 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					10616DE525CC61770084F6A1 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 10616DCF25CC61760084F6A1;
+					};
+					10616DF025CC61770084F6A1 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 10616DCF25CC61760084F6A1;
+					};
+					10616DF925CC61770084F6A1 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					10616E0825CC61770084F6A1 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 10616DCB25CC61760084F6A1 /* Build configuration list for PBXProject "WatchSoundBoard" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 10616DC725CC61760084F6A1;
+			productRefGroup = 10616DD125CC61760084F6A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				10616DCF25CC61760084F6A1 /* WatchSoundBoard */,
+				10616DE525CC61770084F6A1 /* WatchSoundBoardTests */,
+				10616DF025CC61770084F6A1 /* WatchSoundBoardUITests */,
+				10616DF925CC61770084F6A1 /* WatchSoundBoard WatchKit App */,
+				10616E0825CC61770084F6A1 /* WatchSoundBoard WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		10616DCE25CC61760084F6A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10616DE025CC61770084F6A1 /* LaunchScreen.storyboard in Resources */,
+				10616DDD25CC61770084F6A1 /* Assets.xcassets in Resources */,
+				10616DDB25CC61760084F6A1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10616DE425CC61770084F6A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10616DEF25CC61770084F6A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10616DF825CC61770084F6A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10616E0325CC61770084F6A1 /* Assets.xcassets in Resources */,
+				10616E0125CC61770084F6A1 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10616E0725CC61770084F6A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10616E5025CC98C00084F6A1 /* Startled Whoop.mp3 in Resources */,
+				10616E4F25CC98C00084F6A1 /* Speeder bike flyby.mp3 in Resources */,
+				10616E5B25CC98C00084F6A1 /* Abrupt Burst.mp3 in Resources */,
+				10616E5725CC98C00084F6A1 /* Hyperdrive trouble.mp3 in Resources */,
+				10616E5325CC98C00084F6A1 /* TIE fighter fire 1.mp3 in Resources */,
+				10616E5C25CC98C00084F6A1 /* Quadlaser turret fire.mp3 in Resources */,
+				10616E5125CC98C00084F6A1 /* Jump to lightspeed.mp3 in Resources */,
+				10616E5625CC98C00084F6A1 /* TIE fighter flyby 2.mp3 in Resources */,
+				10616E5925CC98C00084F6A1 /* WEEEOOOOWW.mp3 in Resources */,
+				10616E5A25CC98C00084F6A1 /* XWing flyby 3.mp3 in Resources */,
+				10616E5525CC98C00084F6A1 /* Landspeeder accelerate.mp3 in Resources */,
+				10616E4E25CC98C00084F6A1 /* Curt Reply.mp3 in Resources */,
+				10616E5225CC98C00084F6A1 /* Falcon landing.mp3 in Resources */,
+				10616E1725CC61770084F6A1 /* Assets.xcassets in Resources */,
+				10616E5825CC98C00084F6A1 /* Lonely singing.mp3 in Resources */,
+				10616E5425CC98C00084F6A1 /* XWing fire.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		10616DCC25CC61760084F6A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10616DD825CC61760084F6A1 /* ViewController.swift in Sources */,
+				10616DD425CC61760084F6A1 /* AppDelegate.swift in Sources */,
+				10616DD625CC61760084F6A1 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10616DE225CC61770084F6A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10616DEB25CC61770084F6A1 /* WatchSoundBoardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10616DED25CC61770084F6A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10616DF625CC61770084F6A1 /* WatchSoundBoardUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10616E0525CC61770084F6A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10616E7825CCFD3F0084F6A1 /* FileManager-DocumentsDirectory.swift in Sources */,
+				10616E6325CC9AD90084F6A1 /* TableInterfaceController.swift in Sources */,
+				10616E3325CC8E560084F6A1 /* SoundPlaying.swift in Sources */,
+				10616E7125CCFC2B0084F6A1 /* CustomInterfaceController.swift in Sources */,
+				10616E1325CC61770084F6A1 /* NotificationController.swift in Sources */,
+				10616E1525CC61770084F6A1 /* ComplicationController.swift in Sources */,
+				10616E6A25CCF56C0084F6A1 /* SoundRow.swift in Sources */,
+				10616E1125CC61770084F6A1 /* ExtensionDelegate.swift in Sources */,
+				10616E0F25CC61770084F6A1 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		10616DE825CC61770084F6A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10616DCF25CC61760084F6A1 /* WatchSoundBoard */;
+			targetProxy = 10616DE725CC61770084F6A1 /* PBXContainerItemProxy */;
+		};
+		10616DF325CC61770084F6A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10616DCF25CC61760084F6A1 /* WatchSoundBoard */;
+			targetProxy = 10616DF225CC61770084F6A1 /* PBXContainerItemProxy */;
+		};
+		10616DFD25CC61770084F6A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10616DF925CC61770084F6A1 /* WatchSoundBoard WatchKit App */;
+			targetProxy = 10616DFC25CC61770084F6A1 /* PBXContainerItemProxy */;
+		};
+		10616E0C25CC61770084F6A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10616E0825CC61770084F6A1 /* WatchSoundBoard WatchKit Extension */;
+			targetProxy = 10616E0B25CC61770084F6A1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		10616DD925CC61760084F6A1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				10616DDA25CC61760084F6A1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		10616DDE25CC61770084F6A1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				10616DDF25CC61770084F6A1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		10616DFF25CC61770084F6A1 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				10616E0025CC61770084F6A1 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		10616E1A25CC61770084F6A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		10616E1B25CC61770084F6A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		10616E1D25CC61770084F6A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "WatchSoundBoard WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jonathanShoemaker.WatchSoundBoard.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		10616E1E25CC61770084F6A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "WatchSoundBoard WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jonathanShoemaker.WatchSoundBoard.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		10616E2125CC61770084F6A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = WatchSoundBoard_WatchKit_Extension;
+				INFOPLIST_FILE = "WatchSoundBoard WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = jonathanShoemaker.WatchSoundBoard.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		10616E2225CC61770084F6A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = WatchSoundBoard_WatchKit_Extension;
+				INFOPLIST_FILE = "WatchSoundBoard WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = jonathanShoemaker.WatchSoundBoard.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		10616E2525CC61770084F6A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WatchSoundBoard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jonathanShoemaker.WatchSoundBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		10616E2625CC61770084F6A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WatchSoundBoard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jonathanShoemaker.WatchSoundBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		10616E2825CC61770084F6A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WatchSoundBoardTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jonathanShoemaker.WatchSoundBoardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WatchSoundBoard.app/WatchSoundBoard";
+			};
+			name = Debug;
+		};
+		10616E2925CC61770084F6A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WatchSoundBoardTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jonathanShoemaker.WatchSoundBoardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WatchSoundBoard.app/WatchSoundBoard";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		10616E2B25CC61770084F6A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WatchSoundBoardUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jonathanShoemaker.WatchSoundBoardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WatchSoundBoard;
+			};
+			name = Debug;
+		};
+		10616E2C25CC61770084F6A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WatchSoundBoardUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jonathanShoemaker.WatchSoundBoardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WatchSoundBoard;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		10616DCB25CC61760084F6A1 /* Build configuration list for PBXProject "WatchSoundBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10616E1A25CC61770084F6A1 /* Debug */,
+				10616E1B25CC61770084F6A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10616E1C25CC61770084F6A1 /* Build configuration list for PBXNativeTarget "WatchSoundBoard WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10616E1D25CC61770084F6A1 /* Debug */,
+				10616E1E25CC61770084F6A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10616E2025CC61770084F6A1 /* Build configuration list for PBXNativeTarget "WatchSoundBoard WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10616E2125CC61770084F6A1 /* Debug */,
+				10616E2225CC61770084F6A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10616E2425CC61770084F6A1 /* Build configuration list for PBXNativeTarget "WatchSoundBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10616E2525CC61770084F6A1 /* Debug */,
+				10616E2625CC61770084F6A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10616E2725CC61770084F6A1 /* Build configuration list for PBXNativeTarget "WatchSoundBoardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10616E2825CC61770084F6A1 /* Debug */,
+				10616E2925CC61770084F6A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10616E2A25CC61770084F6A1 /* Build configuration list for PBXNativeTarget "WatchSoundBoardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10616E2B25CC61770084F6A1 /* Debug */,
+				10616E2C25CC61770084F6A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 10616DC825CC61760084F6A1 /* Project object */;
+}

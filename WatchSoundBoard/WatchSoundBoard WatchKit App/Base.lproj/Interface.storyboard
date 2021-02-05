@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="17701" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="17500"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchSoundBoard_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="0.5" alignment="left" id="ygh-dm-OYt">
+                            <items>
+                                <button width="0.5" height="1" alignment="left" title="1" id="FLQ-Ur-htM">
+                                    <connections>
+                                        <action selector="playSound1" destination="AgC-eL-Hgc" id="DHN-aq-n7S"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" height="1" alignment="left" title="2" id="Kv6-l3-5E5">
+                                    <connections>
+                                        <action selector="playSound2" destination="AgC-eL-Hgc" id="sd2-x9-GXU"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.5" alignment="left" id="20D-EQ-hqa">
+                            <items>
+                                <button width="0.5" height="1" alignment="left" title="3" id="f5a-c5-QOp">
+                                    <connections>
+                                        <action selector="playSound3" destination="AgC-eL-Hgc" id="gPX-HU-M7e"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" height="1" alignment="left" title="4" id="gDJ-gH-UH9">
+                                    <connections>
+                                        <action selector="playSound4" destination="AgC-eL-Hgc" id="Jqm-bU-oZB"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <segue destination="Xfz-PP-PTc" kind="relationship" relationship="nextPage" id="sxz-ab-MoN"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="153" y="24"/>
+        </scene>
+        <!--Table Interface Controller-->
+        <scene sceneID="PIQ-tN-CFO">
+            <objects>
+                <controller id="Xfz-PP-PTc" customClass="TableInterfaceController" customModule="WatchSoundBoard_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" id="Rot-ob-FcK">
+                            <items>
+                                <tableRow identifier="Row" id="9G9-kR-sII" customClass="SoundRow" customModule="WatchSoundBoard_WatchKit_App" customModuleProvider="target">
+                                    <group key="rootItem" width="1" alignment="left" id="cbv-YY-lTo">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="Label" id="bPk-Tn-O5U"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="textLabel" destination="bPk-Tn-O5U" id="EAY-SE-BcM"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="Rot-ob-FcK" id="Z9r-X9-3aY"/>
+                        <segue destination="EXw-EJ-QWn" kind="relationship" relationship="nextPage" id="Z35-nh-KmD"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="411" y="19"/>
+        </scene>
+        <!--Custom Interface Controller-->
+        <scene sceneID="A7n-fQ-WkI">
+            <objects>
+                <controller id="EXw-EJ-QWn" customClass="CustomInterfaceController" customModuleProvider="target">
+                    <items>
+                        <button width="1" height="0.5" alignment="left" title="Record" id="8qB-Ga-YMQ">
+                            <color key="backgroundColor" red="1" green="0.097600226423815939" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="recordTapped" destination="EXw-EJ-QWn" id="8th-Ev-d2Q"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="0.5" alignment="left" title="Play" id="0gW-iX-uAB">
+                            <color key="backgroundColor" red="0.0" green="1" blue="0.051414215478916336" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="playTapped" destination="EXw-EJ-QWn" id="CF5-e3-KjN"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="694" y="6"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="WatchSoundBoard_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="Niz-AI-uX2">
+            <objects>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="WatchSoundBoard_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="345"/>
+        </scene>
+    </scenes>
+</document>
